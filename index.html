@@ -18,7 +18,7 @@
             <div class="contenedor">
                 <p class="logo">JUAN SANTOS</p>
                 <img class="menu-icon" src="./img/menu.png">
-                <nav>
+                <nav id="item-menu">
                     <ul>
                         <li><a href="#sobre-mi"> Sobre Mí </a></li>
                         <li><a href="#servicios"> Servicios </a></li>
@@ -260,6 +260,14 @@
                 $('header nav').slideToggle();
             })
         })
+    </script>
+
+    <script>
+        const item = document.getElementById("item-menu");
+
+        if(window.width > 1000) {
+            item = item.style.display = "block !important";
+        }
     </script>
 </body>
 </html>
